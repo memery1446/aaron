@@ -174,32 +174,49 @@ export default function ComputerAcademy() {
           </div>
         </section>
 
-                {/* CTA Section */}
-        <section className="py-16 md:py-24 bg-primary text-primary-foreground">
-          <div className="container text-center">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-              Where do you want to be in six months?  
-            </h2>
-            <p className="mt-4 md:text-lg max-w-3xl mx-auto">
-              I add unforgettable value with powerful coaching. 
-</p>
-<p className="mt-4 md:text-lg max-w-3xl mx-auto">
-              Join me for focused learning and courageous growth.
-            </p>
-            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-              <Button size="lg" variant="secondary">
-                Schedule a Conversation
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="bg-transparent text-primary-foreground hover:bg-primary-foreground/10"
-              >
-                Brochure
-              </Button>
-            </div>
-          </div>
-        </section>
+{/* CTA Section */}
+<section className="py-16 md:py-24 bg-primary text-primary-foreground">
+  <div className="container">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      {/* Image on the left */}
+      <div className="flex justify-center md:justify-start">
+        <div className="relative w-full max-w-md aspect-square rounded-lg overflow-hidden bg-primary-foreground/10">
+          {/* Replace this with your actual image */}
+          <img 
+            src="/media/HS2.jpg" 
+            alt="Professional coaching" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+      {/* Content on the right */}
+      <div className="text-center md:text-left">
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+          Where do you want to be in six months?  
+        </h2>
+        <p className="mt-4 md:text-lg">
+          I add unforgettable value with powerful coaching. 
+        </p>
+        <p className="mt-4 md:text-lg">
+          Join me for focused learning and courageous growth.
+        </p>
+        <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+          <Button size="lg" variant="secondary">
+            Schedule a Conversation
+          </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            className="bg-transparent text-primary-foreground hover:bg-primary-foreground/10"
+          >
+            Brochure
+          </Button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* Courses Section */}
         <section id="courses" className="py-16 md:py-24">
