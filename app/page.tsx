@@ -372,7 +372,7 @@ export default function ComputerAcademy() {
 
               <div className="relative aspect-video md:aspect-square rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=600&width=600"
+                  src="/media/HS1.png"
                   alt="Students in a computer lab"
                   fill
                   className="object-cover"
