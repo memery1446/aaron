@@ -109,10 +109,10 @@ export default function ComputerAcademy() {
   {/* Background image */}
   <div className="absolute inset-0 -z-10 h-full w-full">
     <Image
-      src="/media/lightning.jpg" 
+      src="/media/seascape3.jpeg" 
       alt="Lightning over ocean"
       fill
-      className="object-cover object-bottom"
+      className="object-cover object-right"
       priority
     />
   </div>
@@ -222,138 +222,78 @@ export default function ComputerAcademy() {
         <section id="courses" className="py-16 md:py-24">
           <div className="container">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">What I offer</h2>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Let's choose a path and make it happen.</h2>
               <p className="mt-4 text-muted-foreground md:text-lg max-w-3xl mx-auto">
-                Come Discover...
+                Connect to who you are...
               </p>
             </div>
 
-            <Tabs defaultValue="diploma" className="w-full">
-              <div className="flex justify-center mb-8">
-                <TabsList>
-                  <TabsTrigger value="diploma">Individual</TabsTrigger>
-                  <TabsTrigger value="data">Business</TabsTrigger>
-                  <TabsTrigger value="cybersecurity">Eldercare</TabsTrigger>
-                  <TabsTrigger value="programming">Data Driven</TabsTrigger>
-                </TabsList>
-              </div>
+    <Tabs defaultValue="hello" className="w-full">
+      <div className="flex justify-center mb-8">
+        <TabsList>
+          <TabsTrigger value="hello">Hello</TabsTrigger>
+          <TabsTrigger value="journey">Journey</TabsTrigger>
+          <TabsTrigger value="focus">Focus</TabsTrigger>
+          <TabsTrigger value="hybrid">Hybrid</TabsTrigger>
+        </TabsList>
+      </div>
 
-              <TabsContent value="diploma" className="space-y-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  <CourseCard
-                    title="One on one coaching"
-                    description="Comprehensive training."
-                    duration="3 months"
-                    level="All Levels"
-                    icon={<Code className="h-10 w-10 text-primary" />}
-                    image="/media/Oakley.jpg"
-                  />
-                  <CourseCard
-                    title="Small business consultation"
-                    description="Learn the core concepts."
-                    duration="3 days"
-                    level="All Levels"
-                    icon={<Code className="h-10 w-10 text-primary" />}
-                    image="/media/Piper.jpg"
-                  />
-                  <CourseCard
-                    title="What do I really want? A six-part course"
-                    description="Dig deep into what you really want out of life."
-                    duration="3 months"
-                    level="All Levels"
-                    icon={<Code className="h-10 w-10 text-primary" />}
-                    image="/media/Oakley.jpg"
-                  />
-                </div>
-              </TabsContent>
+      <TabsContent value="hello" className="flex flex-col items-center space-y-6">
+        <img
+          src="/media/Hello.jpg"
+          alt="Hello"
+          className="w-full max-w-5xl rounded-xl shadow-lg"
+        />
+        <div className="max-w-3xl text-center text-lg text-muted-foreground">
+          <h2 className="text-2xl font-semibold mb-2">Hello Offering</h2>
+          <p>
+            This is a placeholder description for the Hello offering. You can explain the image, the purpose of the tab, or any relevant context here.
+          </p>
+        </div>
+      </TabsContent>
 
-              <TabsContent value="data" className="space-y-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  <CourseCard
-                    title="Shake it up Bootcamp"
-                    description="All the stuff you know you should do? I'll help you do it."
-                    duration="20 weeks"
-                    level="Intermediate"
-                    icon={<Database className="h-10 w-10 text-primary" />}
-                    image="/media/Piper.jpg"
-                  />
-                  <CourseCard
-                    title="Preparing for Elder Care"
-                    description="How to protect your values while making room for this important role."
-                    duration="Until they pass"
-                    level="Intermediate to Advanced"
-                    icon={<Database className="h-10 w-10 text-primary" />}
-                    image="/media/Oakley.jpg"
-                  />
-                  <CourseCard
-                    title="Assemble a mentor"
-                    description="Book group where we share inspiring books as we build our value-set."
-                    duration="Weekly"
-                    level="Intermediate"
-                    icon={<Database className="h-10 w-10 text-primary" />}
-                    image="/media/Piper.jpg"
-                  />
-                </div>
-              </TabsContent>
+      <TabsContent value="journey" className="flex flex-col items-center space-y-6">
+        <img
+          src="/media/Journey.jpg"
+          alt="Journey"
+          className="w-full max-w-5xl rounded-xl shadow-lg"
+        />
+        <div className="max-w-3xl text-center text-lg text-muted-foreground">
+          <h2 className="text-2xl font-semibold mb-2">Journey Offering</h2>
+          <p>
+            A placeholder for Journey. Describe the image or what users should take away from this section.
+          </p>
+        </div>
+      </TabsContent>
 
-              <TabsContent value="cybersecurity" className="space-y-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  <CourseCard
-                    title="McWhat? Learn to read the menu"
-                    description="How what you order at McDonalds says a lot about whether or not you'll be promoted."
-                    duration="12 weeks"
-                    level="Beginner to Intermediate"
-                    icon={<Shield className="h-10 w-10 text-primary" />}
-                    image="/media/Oakley.jpg"
-                  />
-                  <CourseCard
-                    title="LifeHacking"
-                    description="Small things can add big efficiency."
-                    duration="16 weeks"
-                    level="Intermediate"
-                    icon={<Shield className="h-10 w-10 text-primary" />}
-                    image="/media/Piper.jpg"
-                  />
-                  <CourseCard
-                    title="Garage Sales as a path to marital clarity"
-                    description="Chain garage sales as a marital test. You'll know after three sales."
-                    duration="14 weeks"
-                    level="Intermediate to Advanced"
-                    icon={<Shield className="h-10 w-10 text-primary" />}
-                    image="/media/Oakley.jpg"
-                  />
-                </div>
-              </TabsContent>
+      <TabsContent value="focus" className="flex flex-col items-center space-y-6">
+        <img
+          src="/media/Focus.jpg"
+          alt="Focus"
+          className="w-full max-w-5xl rounded-xl shadow-lg"
+        />
+        <div className="max-w-3xl text-center text-lg text-muted-foreground">
+          <h2 className="text-2xl font-semibold mb-2">Focus Offering</h2>
+          <p>
+            Placeholder text for Focus. Highlight what makes this offering important or distinct.
+          </p>
+        </div>
+      </TabsContent>
 
-              <TabsContent value="programming" className="space-y-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  <CourseCard
-                    title="What the...?"
-                    description="Talk about idiotic stuff people do."
-                    duration="14 weeks"
-                    level="Intermediate"
-                    icon={<Smartphone className="h-10 w-10 text-primary" />}
-                    image="/media/Piper.jpg"
-                  />
-                  <CourseCard
-                    title="Why do I take pills?"
-                    description="We review your phone apps and their effect on your drug use."
-                    duration="14 weeks"
-                    level="Intermediate"
-                    icon={<Smartphone className="h-10 w-10 text-primary" />}
-                    image="/media/Oakley.jpg"
-                  />
-                  <CourseCard
-                    title="Anger Management"
-                    description="Dial it down, buddy."
-                    duration="12 weeks"
-                    level="Intermediate"
-                    icon={<Smartphone className="h-10 w-10 text-primary" />}
-                    image="/media/Piper.jpg"
-                  />
-                </div>
-              </TabsContent>
-            </Tabs>
+      <TabsContent value="hybrid" className="flex flex-col items-center space-y-6">
+        <img
+          src="/media/Hybrid.jpg"
+          alt="Hybrid"
+          className="w-full max-w-5xl rounded-xl shadow-lg"
+        />
+        <div className="max-w-3xl text-center text-lg text-muted-foreground">
+          <h2 className="text-2xl font-semibold mb-2">Hybrid Offering</h2>
+          <p>
+            This area can be used to explain the Hybrid approach, what’s new about it, or why it matters.
+          </p>
+        </div>
+      </TabsContent>
+    </Tabs>
 
             <div className="mt-12 text-center">
               <Button size="lg">Let's Design Together!</Button>
